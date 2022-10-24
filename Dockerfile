@@ -1,3 +1,4 @@
 FROM python:alpine
-COPY . /get_user
-CMD ["python", "/get_user/getUser.py"]
+WORKDIR /app
+COPY . /app
+CMD ["python", "getUser.py"]
