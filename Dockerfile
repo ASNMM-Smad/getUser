@@ -1,4 +1,4 @@
 FROM python:alpine
 WORKDIR /app
 ADD  . /app
-CMD ["python", "./getUser.py"]
+CMD ["python", "getUser.py"]
