@@ -1,4 +1,6 @@
 FROM python:alpine
-WORKDIR /app
+RUN mkdir /app
+COPY . .
 ADD  . /app
+WORKDIR /app
 CMD ["python", "getUser.py"]
