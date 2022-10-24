@@ -1,8 +1,7 @@
 FROM python:alpine
-RUN mkdir /app
-COPY . .
-ADD  . /app
 WORKDIR /app
-RUN ll
+ADD getUser.py /app
+RUN ls
 RUN pwd
 CMD ["python", "getUser.py"]
+
